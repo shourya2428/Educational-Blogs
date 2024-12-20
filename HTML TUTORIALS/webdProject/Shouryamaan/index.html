@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A blog focused on technology with categories, tags, and a commenting system.">
+    <title>Educational Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Educational Blog</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#tags">Tags</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="latest-posts" class="container">
+            <h2>Latest Posts</h2>
+            <article>
+                <h3><a href="https://www.forbes.com/sites/bernardmarr/2023/11/01/the-top-5-artificial-intelligence-trends-for-2024/">Top 5 Emerging AI Technologies in 2024</a></h3>
+                <p>Discover the groundbreaking advancements in AI shaping our future...</p>
+                <p class="meta">Category: <a href="#">Artificial Intelligence</a> | Tags: <a href="#">AI</a>, <a href="#">Innovation</a></p>
+            </article>
+            <article>
+                <h3><a href="https://gostack.co.uk/blog/how-to-secure-cloud-infrastructure/#:~:text=How%20to%20secure%20cloud%20infrastructure%201%201.%20Understand,a%20Strong%20Incident%20Response%20Plan%20...%20More%20items">How to Build a Secure Cloud Infrastructure</a></h3>
+                <p>Learn the essential steps to protect your data in the cloud...</p>
+                <p class="meta">Category: <a href="#">Cloud Computing</a> | Tags: <a href="#">Cloud</a>, <a href="#">Security</a></p>
+            </article>
+        </section>
+
+       
+                <section id="categories" class="container">
+                    <h2>Categories</h2>
+                    <ul>
+                        <li><a href="health.html">Health</a></li>
+                        <li><a href="Technology.html">Technology</a></li>
+                        <li><a href="Finance.html">Finance</a></li>
+                    </ul>
+                </section>
+                
+           
+
+        <section id="tags" class="container">
+            <h2>Popular Tags</h2>
+            <ul class="tags">
+                <li><a href="AI.html">AI</a></li>
+                <li><a href="Cloud.html">Cloud</a></li>
+                <li><a href="Fitness.html">Fitness</a></li>
+                <li><a href="Nutrition.html">Nutrition</a></li>
+                <li><a href="Business.html">Business</a></li>
+            </ul>
+        </section>
+
+        <section id="comments" class="container">
+            <h2>Leave a Comment</h2>
+            <form id="comment-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="comment">Comment:</label>
+                <textarea id="comment" name="comment" rows="4" required></textarea>
+
+                <button type="submit">Post Comment</button>
+            </form>
+
+            <div id="comments-section">
+                <h3>Comments</h3>
+                <div class="comment">
+                    <p><strong>Shouryamaan Tyagi:</strong> Great article on AI technologies!</p>
+                </div>
+                <div class="comment">
+                    <p><strong>Tony Stark:</strong> Very informative post on cloud security. Thanks!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Educational blog. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="educational_blog.js"></script>
+</body>
+</html>
